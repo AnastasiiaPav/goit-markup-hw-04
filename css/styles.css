@@ -199,13 +199,22 @@
    /* наполнение */
    
    .hero{
-      background-image: url(../image/backgraund.jpg);
+      background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/backgraund.jpg) ;
       background-repeat: no-repeat;
       background-position: center;
-      background-size: cover;
+      background-size: auto 100%;
       background-color: var(--footer-backgraund);
-      text-align: center;
-      padding: 200px;
+
+      margin-left: auto;
+      margin-right: auto;
+      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      padding-top: 200px;
+      padding-bottom: 200px;
    }
    
    .hero-title {
@@ -281,7 +290,9 @@
     }
 
     .title{
+      margin-top: 30px;
       margin-bottom: 10px;
+     
     }
    
    
@@ -311,7 +322,10 @@
    
     .button {
      
+      border: none;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
       margin-top: 30px;
+      border-radius: 4px;
 
       font-family: inherit;
       color:  var(--main-background);
@@ -438,6 +452,10 @@
 
    }
 
+   .klients{
+      background-color: var(--main-background);
+   }
+
    
    /* футер */
    
@@ -511,4 +529,65 @@
          color: var(--accent-color);
       }
 
-   
+/* оформление красоты */
+
+   .icons::before{
+      display: block;
+      content: "";
+      height: 120px;
+      border-radius: 4px;
+      background-size: 70px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: rgba(245, 244, 250, 1);
+      /* background-image: url(../image/svg/antenna\ 1.svg); */
+   }
+
+     .icons.first::before{
+      background-image: url(../image/svg/antenna\ 1.svg);
+   }
+
+     .icons.second::before{
+   background-image: url(../image/svg/clock\ 1.svg);
+}
+
+    .icons.third::before{
+   background-image: url(../image/svg/diagram\ 1.svg);
+}
+
+   .icons.fourth::before{
+      background-image: url(../image/svg/astronaut\ 1.svg);
+   }
+
+   .icons-foot::after{
+      content: "";
+      display: block;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-size: 44px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: var(--primary-text-color);
+   }
+
+   .icons-foot.first::after{
+      background-image: url(../image/svg/Ellipse.svg);
+   }
+
+   .icons-foot.second::after{
+    background-image: url(../image/svg/Ellipse\ \(1\).svg);
+   }
+
+   .icons-foot.third::after{
+      background-image: url(../image/svg/Ellipse\ \(2\).svg);
+   }
+
+   .icons-foot.fourth::after{
+      background-image: url(../image/svg/Ellipse\ \(3\).svg);
+   }
+
+   .icons-foot a:focus,
+   .icons-foot:hover{
+      color: var(--accent-color);
+   }
