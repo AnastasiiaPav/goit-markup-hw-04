@@ -120,6 +120,7 @@
    /* навигация хедера*/
 
    .page-header {
+
        /* display: flex;
       align-items: center;
       justify-content: space-between; */ 
@@ -198,6 +199,10 @@
    /* наполнение */
    
    .hero{
+      background-image: url(../image/backgraund.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
       background-color: var(--footer-backgraund);
       text-align: center;
       padding: 200px;
