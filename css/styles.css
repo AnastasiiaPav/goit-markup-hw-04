@@ -198,13 +198,15 @@
    /* наполнение */
    
    .hero{
+      background-color: var(--footer-backgraund);
       text-align: center;
       padding: 200px;
    }
    
    .hero-title {
+      max-width: 696px;
+      width: 100%;
       
-
       color: var(--main-background);
       font-weight: 900;
       font-size: 44px;
@@ -214,7 +216,10 @@
       text-transform: uppercase;
    }
 
-   
+   .section.feature-cont{
+      background-color: var(--main-background);
+      padding-bottom: 0px;
+   }
 
    .feature-content{
       
@@ -269,6 +274,11 @@
       line-height: 24px;
       color: var(--primary-text-color);
     }
+
+    .title{
+      margin-bottom: 10px;
+    }
+   
    
     .second-title{
       margin-top: 30px;
@@ -284,16 +294,15 @@
       letter-spacing: 0.03em;
    }
    
-   /* кнопка */
-/* 
-.button.button-secondary:focus
-.button.button-secondary:hover{
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-} */
+   
 
-   .button, .button-secondary{
-      cursor: pointer;
-   }
+.button, .button-secondary{
+   padding-left: 22px;
+   padding-right: 22px;
+   padding-top: 6px;
+   padding-bottom: 6px;
+   cursor: pointer;
+}
    
     .button {
      
@@ -314,6 +323,10 @@
    
    }
     /* страница портфолио */
+
+    .portfolio{
+      background-color:var(--main-background);
+    }
    
    .button-secondary{
       font-family: inherit;
@@ -326,18 +339,23 @@
       color: var(--title-text-color);
    }
    
+   .btn-sec{
+      margin-bottom: 50px;
+      display: flex;
+      justify-content: center;
+   }
+
    .button-secondary:hover,
    .button-secondary:focus{
       color: var(--main-background);
       background-color: var(--accent-color);
    }
    
-   .btn-sec{
-      margin-bottom: 50px;
-      display: flex;
-      justify-content: center;
+   .set-btn:focus,
+   .set-btn:hover{
+     box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.25);
    }
-    
+
    .set-btn{
       border-radius: 4px;
       margin-left: 8px;
@@ -351,8 +369,6 @@
    }
    
    .works{
-     margin-top: 20px;
-     margin-bottom: 4px;
 
       font-weight: 700;
      font-size: 18px;
@@ -365,6 +381,14 @@
 .hover:focus{
    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
+}
+
+.peculiar{
+   background-color: var(--main-background);
+}
+
+   .team{
+   background-color: var(--second-background);
 }
 
    .work-set{
@@ -397,11 +421,12 @@
 
    .bord{
 
+      padding-top: 20px;
       padding-bottom: 20px;
       padding-left: 24px;
       padding-right: 24px;
       border-color: var(--primary-text-color);
-      border-top: solid 1px #EEEEEE;
+      border-top: 0px;
       border-bottom:solid 1px #EEEEEE;
       border-left: solid 1px #EEEEEE;
       border-right: solid 1px #EEEEEE;
@@ -459,12 +484,14 @@
    
 
       .addres{
-         /* max-width: 215px;
-         width: 100%; */
+         max-width: 215px;
+         width: 100%;
          justify-content: flex-start;
       }
 
     .addres .link{ 
+      margin-top: 9px;
+
       display: flex;
       margin-top: 9px;
       font-style: normal;
