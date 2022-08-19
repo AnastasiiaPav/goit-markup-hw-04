@@ -396,12 +396,16 @@
    }
 
    .bord{
-      opacity: 0.5;
+
+      padding-bottom: 20px;
+      padding-left: 24px;
+      padding-right: 24px;
       border-color: var(--primary-text-color);
-      border-top: solid 1px;
-      border-bottom:solid 1px;
-      border-left: solid 1px;
-      border-right: solid 1px;
+      border-top: solid 1px #EEEEEE;
+      border-bottom:solid 1px #EEEEEE;
+      border-left: solid 1px #EEEEEE;
+      border-right: solid 1px #EEEEEE;
+
    }
 
    
