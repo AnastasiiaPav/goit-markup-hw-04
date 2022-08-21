@@ -555,33 +555,33 @@
 
 /* оформление красоты */
 
-   .icons::before{
-      display: block;
-      content: "";
-      height: 120px;
-      border-radius: 4px;
-      background-size: 70px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-color: rgba(245, 244, 250, 1);
-      /* background-image: url(../image/svg/antenna\ 1.svg); */
-   }
-
-     .icons.first::before{
-      background-image: url(../image/svg/antenna\ 1.svg);
-   }
-
-     .icons.second::before{
-   background-image: url(../image/svg/clock\ 1.svg);
+.icons::before{
+   display: block;
+   content: "";
+   height: 120px;
+   border-radius: 4px;
+   background-size: 70px;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-color: rgba(245, 244, 250, 1);
+ 
 }
 
-    .icons.third::before{
-   background-image: url(../image/svg/diagram\ 1.svg);
+  .icons.first::before{
+   background-image: url(../image/svg/antenna\ 1.svg);
 }
 
-   .icons.fourth::before{
-      background-image: url(../image/svg/astronaut\ 1.svg);
-   }
+  .icons.second::before{
+background-image: url(../image/svg/clock\ 1.svg);
+}
+
+ .icons.third::before{
+background-image: url(../image/svg/diagram\ 1.svg);
+}
+
+.icons.fourth::before{
+   background-image: url(../image/svg/astronaut\ 1.svg);
+}
 
 
    .icons-klients{
@@ -615,19 +615,18 @@
    align-items: center;
    border-radius: 50%;
    margin-right: 10px;
-   background-color:rgba(175, 177, 184, 1);
+   fill: #AFB1B8;
+   background-color: #AFB1B8;
    cursor: pointer;
   }
 
   .icons-foot:hover,
   .icons-foot:focus{
-   fill: var(--accent-color);
+   background-color: #2196F3;
+
   }
 
-  .icons-foot:hover
-  .icons-foot:focus{
-   background-color: var(--color-blue)
-  }
+ 
 
   .foot-box{
    display: flex;
