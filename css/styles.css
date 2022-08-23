@@ -586,10 +586,11 @@ background-image: url(../image/svg/diagram\ 1.svg);
 
    .icons-klients{
       display: flex;
+      background-color: var(--main-background);
    }
     
-   /* .icons-klients:hover.icon-kl,
-   .icons-klients:focus.icon-kl{
+  /* .icons-kl:hover,
+  .icons-kl:focus{
      color: var(--accent-color);
    } */
 
@@ -603,35 +604,41 @@ background-image: url(../image/svg/diagram\ 1.svg);
   }
 
 
-  .icon-kl:focus,
-  .icon-kl:hover{
+  .icon-kl:hover,
+  .icons-kl:focus{
+   border-color: var(--accent-color);
+}
+
+.icon-kl:hover{
    fill: var(--accent-color);
-  }
+}
 
   .icons-foot{
    width: 44px;
    height: 44px;
    display: flex;
    align-items: center;
+   justify-content: center;
    border-radius: 50%;
    margin-right: 10px;
-   fill: #AFB1B8;
-   background-color: #AFB1B8;
+   fill: currentColor;
+   background-color:#AFB1B8;
    cursor: pointer;
   }
 
   .icons-foot:hover,
   .icons-foot:focus{
-   background-color: #2196F3;
-
+   background: var(--accent-color);
   }
 
- 
-
-  .foot-box{
+ .foot-box{
    display: flex;
+}
 
-  }
+.foot-box:hover,
+.foot-box:focus{
+   fill: var(--accent-color);
+}
 
   .join{
    margin-bottom: 20px;
@@ -644,22 +651,24 @@ background-image: url(../image/svg/diagram\ 1.svg);
    letter-spacing: 0.03em;
    text-transform: uppercase;
    
-}
+} 
+
+
 
 .social-icons{
-   width: 44px;
-   height: 44px;
+   width: 20px;
+   height: 20px;
    display: flex;
-   border-radius: 50%;
-   gap: 10px;
+   align-items: center;
+   justify-content: center;
    cursor: pointer;
-  background-color: #FFFFFF;
-  fill: #AFB1B8;
+   /* fill: #757575; */
 }
 
-.social-icons:focus,
-.social-icons:hover{
-   fill: #2196F3;
+
+.social-link:focus,
+.social-link:hover{
+   fill: #FFFFFF;
    background-color: #2196F3;
 }
 
@@ -668,8 +677,14 @@ background-image: url(../image/svg/diagram\ 1.svg);
   width: 44px;
   height: 44px;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  display: flex;
+  margin-right: 10px;
   margin-bottom: 30px;
+  background-color: transparent;
+ 
+   border-radius: 50%;
+   
 }
 
 
@@ -680,5 +695,23 @@ background-image: url(../image/svg/diagram\ 1.svg);
 }
 
 .focus.social-link.social-icons:focus{
-   fill:#2196F3
+   fill:var(--accent-color);
+}
+
+
+
+.svg-head{
+   margin-right: 10px;
+   fill: currentColor;
+   stroke: currentColor;
+   box-sizing: border-box;
+}
+
+/* .svg-head ::last-child(
+border:0px;
+fill: transparent;
+) */
+
+.navi-hov.svg-head.link:focus{
+color: var(--accent-color);
 }
