@@ -621,8 +621,8 @@ background-image: url(../image/svg/diagram\ 1.svg);
    justify-content: center;
    border-radius: 50%;
    margin-right: 10px;
-   fill: currentColor;
-   background-color:#AFB1B8;
+   fill: var(--main-background);
+   background-color:#404142;
    cursor: pointer;
   }
 
@@ -658,17 +658,13 @@ background-image: url(../image/svg/diagram\ 1.svg);
 .social-icons{
    width: 20px;
    height: 20px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
    cursor: pointer;
-   /* fill: #757575; */
+   fill: #AFB1B8;
 }
 
 
 .social-link:focus,
 .social-link:hover{
-   fill: #FFFFFF;
    background-color: #2196F3;
 }
 
@@ -685,6 +681,10 @@ background-image: url(../image/svg/diagram\ 1.svg);
  
    border-radius: 50%;
    
+}
+
+.social-link:hover .social-icons{
+   fill: var(--main-background);
 }
 
 
