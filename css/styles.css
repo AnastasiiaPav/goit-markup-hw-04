@@ -187,6 +187,12 @@
       letter-spacing: 0.02em;
       color:var(--primary-text-color);
       text-decoration: none;
+      display: flex;
+      align-items: center;
+   }
+   .contact-nav{
+      display: flex;
+      align-items: center;
    }
    
     .contact-nav .link:hover, 
@@ -312,18 +318,20 @@
    
    
 
-.button, .button-secondary{
-   border: none;
-   border-radius: 4px;
-   padding-left: 22px;
-   padding-right: 22px;
-   padding-top: 6px;
-   padding-bottom: 6px;
-   cursor: pointer;
-}
+   .button, .button-secondary{
+      border: none;
+      border-radius: 4px;
+      padding-left: 22px;
+      padding-right: 22px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      cursor: pointer;
+   }
    
     .button {
      
+      padding-top: 10px;
+      padding-bottom: 10px;
       border: none;
       border-radius: 4px;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -399,8 +407,8 @@
      color: var(--title-text-color);
      letter-spacing: 0.06em;
    }
-.hover:hover,
-.hover:focus{
+.focus:hover,
+.focus:focus{
    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
 }
@@ -598,7 +606,7 @@ background-image: url(../image/svg/diagram\ 1.svg);
     
   /* .icons-kl:hover,
   .icons-kl:focus{
-     color: var(--accent-color);
+    
    } */
 
   .icon-kl{
@@ -613,11 +621,12 @@ background-image: url(../image/svg/diagram\ 1.svg);
 
 
   .icon-kl:hover,
-  .icons-kl:focus{
+  .icon-kl:focus{
    border-color: var(--accent-color);
 }
 
-.icon-kl:hover{
+.icon-kl:hover,
+.icon-kl:focus{
    fill: var(--accent-color);
 }
 
@@ -638,11 +647,12 @@ background-image: url(../image/svg/diagram\ 1.svg);
    cursor: pointer;
   }
 
+ 
   .icons-foot:hover,
   .icons-foot:focus{
    background: var(--accent-color);
   }
-
+  
  .foot-box{
    display: flex;
 }
@@ -695,7 +705,8 @@ background-image: url(../image/svg/diagram\ 1.svg);
    
 }
 
-.social-link:hover .social-icons{
+.social-link:hover .social-icons,
+.social-link:focus .social-icons{
    fill: var(--main-background);
 }
 
@@ -706,7 +717,8 @@ background-image: url(../image/svg/diagram\ 1.svg);
    justify-content: center;
 }
 
-.focus.social-link.social-icons:focus{
+.focus.social-link.social-icons:focus,
+.focus.social-link.social-icons:hover{
    fill:var(--accent-color);
 }
 
@@ -723,6 +735,7 @@ border:0px;
 fill: transparent;
 ) */
 
-.navi-hov.svg-head.link:focus{
+.navi-hov.svg-head.link:focus,
+.navi-hov.svg-head.link:hover{
 color: var(--accent-color);
 }
