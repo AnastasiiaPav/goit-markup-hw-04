@@ -466,27 +466,33 @@
    
    .footer{
       display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+      align-items: center;
      background-color: var(--footer-backgraund);
       padding-top: 60px;
       padding-bottom: 60px;
    }
+   
 
 
    .i-nav{
-      display: flex;
-      align-items: stretch;
-      justify-content: space-between;
-      align-items: center
-   }
-   .two-nav{
-      display: block;
-      /* align-items: center; */
-      margin-right: 678px;
-      
+      margin-top: 0px;
+  margin-bottom: 20px;
    }
    
-   .logo-foot{
+   .two-nav{
+      display: block;
+     
+   }
 
+   .footer-container {
+      display: flex;
+      align-items: baseline;
+    }
+   
+   .logo-foot{
+   display: flex;
 
       color: var(--logo-color);
        font-family: Raleway, cursive;
@@ -596,6 +602,7 @@ background-image: url(../image/svg/diagram\ 1.svg);
    } */
 
   .icon-kl{
+   border-radius: 4px;
    width: 170px;
    height: 92px;
    display: flex;
