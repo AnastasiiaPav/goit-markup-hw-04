@@ -599,6 +599,8 @@ background-image: url(../image/svg/diagram\ 1.svg);
 }
 
 
+
+
    .icons-klients{
       display: flex;
       background-color: var(--main-background);
@@ -631,10 +633,7 @@ background-image: url(../image/svg/diagram\ 1.svg);
 }
 
 .centr{
-   display: contents;
-}
 
-  .icons-foot{
    width: 44px;
    height: 44px;
    display: flex;
@@ -645,11 +644,32 @@ background-image: url(../image/svg/diagram\ 1.svg);
    fill: var(--main-background);
    background-color:#404142;
    cursor: pointer;
+}
+
+  .icons-foot{
+   /* width: 44px;
+   height: 44px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%; */
+   margin-right: 10px;
+   /* fill: var(--main-background);
+   background-color:#404142;
+   cursor: pointer; */
   }
 
+  /* .icons-foot .centr:focus{
+   background: var(--accent-color);
+  }
+
+  .icons-foot a:focus{
+   background: var(--accent-color);
+  } */
+
  
-  .icons-foot:hover,
-  .icons-foot:focus{
+  .centr:hover,
+  .centr:focus{
    background: var(--accent-color);
   }
   
