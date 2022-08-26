@@ -619,6 +619,7 @@ background-image: url(../image/svg/diagram\ 1.svg);
    border: solid 1px  rgba(175, 177, 184, 1);
    margin-right: 30px;
    fill: rgba(175, 177, 184, 1);
+   outline: none;
   }
 
 
